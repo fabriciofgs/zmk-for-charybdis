@@ -10,21 +10,21 @@
             #binding-cells = <0>;
             bindings =
                 <&kp T>,
-                <&macro_wait_time 30>,
+                <&macro_wait_time 50>,
                 <&kp NUMBER_2>,
-                <&macro_wait_time 30>,
+                <&macro_wait_time 50>,
                 <&kp ENTER>,
-                <&macro_wait_time 30>,
+                <&macro_wait_time 50>,
                 <&kp T>,
-                <&macro_wait_time 30>,
+                <&macro_wait_time 50>,
                 <&kp NUMBER_3>,
-                <&macro_wait_time 30>,
+                <&macro_wait_time 50>,
                 <&kp ENTER>,
-                <&macro_wait_time 30>,
+                <&macro_wait_time 50>,
                 <&kp S>,
-                <&macro_wait_time 30>,
+                <&macro_wait_time 50>,
                 <&kp NUMBER_2>,
-                <&macro_wait_time 30>,
+                <&macro_wait_time 50>,
                 <&kp ENTER>;
 
             label = "M1";
@@ -35,15 +35,15 @@
             #binding-cells = <0>;
             bindings =
                 <&kp S>,
-                <&macro_wait_time 30>,
+                <&macro_wait_time 50>,
                 <&kp NUMBER_2>,
-                <&macro_wait_time 30>,
+                <&macro_wait_time 50>,
                 <&kp ENTER>,
-                <&macro_wait_time 30>,
+                <&macro_wait_time 50>,
                 <&kp P>,
-                <&macro_wait_time 30>,
+                <&macro_wait_time 50>,
                 <&kp NUMBER_2>,
-                <&macro_wait_time 30>,
+                <&macro_wait_time 50>,
                 <&kp ENTER>;
 
             label = "M3";
@@ -54,22 +54,93 @@
             #binding-cells = <0>;
             bindings =
                 <&kp W>,
-                <&macro_wait_time 30>,
+                <&macro_wait_time 50>,
                 <&kp NUMBER_3>,
-                <&macro_wait_time 30>,
+                <&macro_wait_time 50>,
                 <&kp ENTER>,
-                <&macro_wait_time 30>,
+                <&macro_wait_time 50>,
                 <&kp T>,
-                <&macro_wait_time 30>,
+                <&macro_wait_time 50>,
                 <&kp NUMBER_2>,
-                <&macro_wait_time 30>,
+                <&macro_wait_time 50>,
                 <&kp ENTER>,
+                <&macro_wait_time 50>,
+                <&kp A>,
+                <&macro_wait_time 50>,
+                <&kp NUMBER_2>,
+                <&macro_wait_time 50>,
+                <&kp ENTER>;
+
+            label = "M4";
+        };
+
+        INTRO: INTRO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp W>,
+                <&macro_wait_time 50>,
+                <&kp NUMBER_2>,
+                <&macro_wait_time 50>,
+                <&kp ENTER>,
+                <&macro_wait_time 50>,
+                <&kp E>,
+                <&macro_wait_time 50>,
+                <&kp NUMBER_2>,
+                <&macro_wait_time 50>,
+                <&kp ENTER>,
+                <&macro_wait_time 50>,
+                <&kp R>,
+                <&macro_wait_time 50>,
+                <&kp NUMBER_2>,
+                <&macro_wait_time 50>,
+                <&kp ENTER>,
+                <&macro_wait_time 50>,
+                <&kp W>,
+                <&macro_wait_time 50>,
+                <&kp NUMBER_3>,
+                <&macro_wait_time 50>,
+                <&kp ENTER>,
+                <&macro_wait_time 50>,
+                <&kp T>,
+                <&macro_wait_time 50>,
+                <&kp NUMBER_2>,
+                <&macro_wait_time 50>,
+                <&kp ENTER>,
+                <&macro_wait_time 50>,
+                <&kp A>,
+                <&macro_wait_time 50>,
+                <&kp NUMBER_2>,
+                <&macro_wait_time 50>,
+                <&kp ENTER>;
+
+            label = "INTRO";
+        };
+
+        Q1: Q1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp Q>,
                 <&macro_wait_time 30>,
                 <&kp NUMBER_2>,
                 <&macro_wait_time 30>,
                 <&kp ENTER>;
 
-            label = "M4";
+            label = "Q1";
+        };
+
+        Q2: Q2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp Q>,
+                <&macro_wait_time 30>,
+                <&kp N5>,
+                <&macro_wait_time 30>,
+                <&kp ENTER>;
+
+            label = "Q2";
         };
     };
 
@@ -78,23 +149,23 @@
 
         layer_0 {
             bindings = <
-&mo 2      &none         &none  &none    &none   &none      &none        &none      &none      &none     &none            &none             &none       &mo 2
-&kp CAPS   &kp Q         &kp W  &kp E    &kp R   &kp T      &none        &none      &kp Y      &kp U     &kp I            &kp O             &kp APOS    &kp BSPC
-&kp LSHFT  &kp A         &kp S  &kp D    &kp F   &kp G      &none        &none      &kp H      &kp J     &kp K            &kp L             &kp P       &kp PAGE_DOWN
-&kp LCTRL  &kp Z         &kp X  &kp C    &kp V   &kp B      &none        &none      &kp N      &kp M     &kp LS(SLASH)    &kp LS(NUMBER_1)  &kp PERIOD  &kp PAGE_UP
-&kp TAB    &kp LEFT_ALT  &to 1  &kp ESC  &none   &kp ENTER  &kp SPACE    &kp COMMA  &kp ENTER  &none     &kp RIGHT_SHIFT  &to 1             &none       &none
-                                &kp N4   &kp N2  &kp N5     &kp N3       &none      &none      &kp BSPC  &none
+&mo 2    &kp F2        &kp F5  &kp LEFT   &kp RIGHT       &kp ESCAPE  &kp BACKSPACE    &kp COLON  &kp PERIOD  &none          &none            &none             &none          &mo 2
+&Q1      &kp PAGE_UP   &kp Q   &kp W      &kp E           &kp R       &kp T            &kp Y      &kp U       &kp I          &kp O            &kp SINGLE_QUOTE  &none          &none
+&Q2      &kp CAPSLOCK  &kp A   &kp S      &kp D           &kp F       &kp G            &kp H      &kp J       &kp K          &kp L            &kp P             &kp PAGE_DOWN  &none
+&INTRO   &kp LCTRL     &kp Z   &kp X      &kp C           &kp V       &kp B            &kp N      &kp M       &kp QUESTION   &kp EXCLAMATION  &kp DELETE        &kp PAGE_UP    &kp C_VOLUME_UP
+&kp TAB  &kp LEFT_ALT  &to 1   &kp LCTRL  &kp LEFT_SHIFT  &kp ENTER   &kp SPACE        &kp COMMA  &kp ENTER   &to 1          &kp RIGHT_SHIFT  &none             &none          &kp C_VOLUME_DOWN
+                               &kp N4     &kp N2          &kp N5      &kp N3           &kp DOT    &kp LEFT    &kp BACKSPACE  &kp RIGHT
             >;
         };
 
         layer_1 {
             bindings = <
-&none  &none  &none  &none           &none           &none            &none    &none         &none      &none      &none         &none   &kp LEFT_WIN  &kp L
-&none  &none  &none  &none           &none           &none            &none    &none         &none      &none      &kp SLASH     &kp N7  &kp N8        &kp N9
-&none  &none  &none  &none           &kp UP_ARROW    &none            &none    &none         &none      &none      &kp MINUS     &kp N4  &kp N5        &kp N6
-&none  &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none    &none         &none      &none      &kp PLUS      &kp N1  &kp N2        &kp N3
-&none  &none  &to 0  &none           &none           &kp BSPC         &none    &kp N0        &none      &kp EQUAL  &kp ASTERISK  &kp N0  &kp PERIOD    &kp DEL
-                     &M2             &M4             &M3              &none    &kp ASTERISK  &kp SLASH  &kp PLUS   &kp MINUS
+&kp LEFT_WIN  &kp L   &none  &none           &none           &kp LEFT_WIN     &kp L     &none   &none   &none       &kp SLASH         &kp EQUAL  &kp LEFT_WIN  &kp L
+&kp C_VOL_DN  &none   &none  &none           &none           &none            &none     &none   &none   &none       &kp MINUS         &kp N7     &kp N8        &kp N9
+&none         &none   &none  &none           &kp UP_ARROW    &none            &none     &none   &none   &none       &kp ASTERISK      &kp N4     &kp N5        &kp N6
+&none         &trans  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &none   &none   &kp ESCAPE  &kp PLUS          &kp N1     &kp N2        &kp N3
+&trans        &trans  &to 0  &trans          &trans          &trans           &trans    &trans  &trans  &to 0       &kp LS(NUMBER_4)  &kp N0     &kp PERIOD    &kp DEL
+                             &M2             &M4             &M3              &none     &trans  &trans  &trans      &trans
             >;
         };
 
