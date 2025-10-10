@@ -14,6 +14,27 @@
 
 / {
 
+    combos {
+        compatible = "zmk,combos";
+
+        escc {
+            bindings = <&kp ESC>;
+            key-positions = <17 18>;
+            layers = <0>;
+        };
+    };
+
+    behaviors {
+        ht: ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+    };
+
    keymap {
         compatible = "zmk,keymap";
 
