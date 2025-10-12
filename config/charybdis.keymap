@@ -17,6 +17,11 @@
             key-positions = <17 18>;
             layers = <0>;
         };
+
+        Backward {
+            bindings = <&mkp MB4>;
+            key-positions = <49 53>;
+        };
     };
 
     behaviors {
@@ -41,7 +46,7 @@
 &ht LEFT_SHIFT LEFT_PARENTHESIS  &ht TAB A  &ht LEFT_ALT S  &ht LEFT_SHIFT D  &ht LCTRL F  &kp G     &kp H         &ht RCTRL J  &ht RIGHT_SHIFT K  &ht RIGHT_ALT L                 &ht TAB SEMICOLON  &kp APOS
 &ht LCTRL RIGHT_PARENTHESIS      &kp Z      &kp X           &kp C             &kp V        &kp B     &kp N         &kp M        &ht PERIOD COMMA   &ht RIGHT_BRACKET LEFT_BRACKET  &kp SLASH          &kp NON_US_BACKSLASH
                                                             &kp BACKSPACE     &mkp MB1     &tog 1    &kp ENTER     &kp SPACE
-                                                                              &mkp MB2     &mo 2     &kp LEFT_GUI
+                                                                              &mkp MB2     &mo 2     &sk LEFT_GUI
             >;
         };
 
