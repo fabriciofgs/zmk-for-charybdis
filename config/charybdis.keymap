@@ -22,6 +22,11 @@
             bindings = <&mkp MB4>;
             key-positions = <49 53>;
         };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <13 22>;
+        };
     };
 
     behaviors {
