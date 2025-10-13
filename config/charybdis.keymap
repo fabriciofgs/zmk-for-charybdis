@@ -25,7 +25,7 @@
 
         delete {
             bindings = <&kp DELETE>;
-            key-positions = <13 22>;
+            key-positions = <38 39 40>;
         };
 
         Enter {
