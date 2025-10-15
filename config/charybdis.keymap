@@ -14,7 +14,7 @@
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <17 18>;
+            key-positions = <16 19>;
             layers = <0>;
         };
 
