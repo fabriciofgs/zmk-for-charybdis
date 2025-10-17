@@ -30,12 +30,12 @@
 
         Enter {
             bindings = <&kp ENTER>;
-            key-positions = <31 32 33>;
+            key-positions = <19 20 21>;
         };
 
         Backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <28 27 26>;
+            key-positions = <14 15 16>;
         };
     };
 
@@ -67,23 +67,23 @@
 
         numberefunction {
             bindings = <
-&trans  &trans  &trans   &trans   &trans   &trans             &trans     &trans        &trans        &trans           &trans         &trans
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans             &kp N5     &kp NUMBER_6  &kp N7        &kp N8           &kp N9         &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp PRINTSCREEN    &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp NUMBER_4   &trans
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp LEFT_SHIFT     &kp EQUAL  &kp PLUS      &kp MINUS     &kp KP_MULTIPLY  &kp KP_DIVIDE  &trans
-                         &trans   &trans   &trans             &trans     &trans
-                                  &trans   &trans             &trans
+&trans  &trans  &trans   &trans   &trans          &trans             &trans     &trans        &trans        &trans           &trans         &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4          &trans             &kp N5     &kp NUMBER_6  &kp N7        &kp N8           &kp N9         &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8          &kp PRINTSCREEN    &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp NUMBER_4   &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12         &trans             &kp EQUAL  &kp PLUS      &kp MINUS     &kp KP_MULTIPLY  &kp KP_DIVIDE  &trans
+                         &trans   &kp LEFT_SHIFT  &trans             &trans     &trans
+                                  &trans          &trans             &trans
             >;
         };
 
         special {
             bindings = <
-&trans  &trans           &trans       &trans          &trans      &trans         &trans     &trans         &trans        &trans                &trans                 &trans
-&trans  &trans           &trans       &trans          &trans      &trans         &trans     &kp END        &kp HOME      &trans                &trans                 &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH        &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &trans           &trans       &kp LEFT_SHIFT  &kp LCTRL   &trans         &kp LEFT   &kp DOWN       &kp UP        &kp RIGHT             &trans                 &trans
-                                      &trans          &trans      &trans         &trans     &trans
-                                                      &trans      &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans    &trans        &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &kp END   &kp HOME      &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans    &trans        &trans     &trans  &trans
+                        &trans  &trans  &trans    &trans          &trans
+                                &trans  &trans    &trans
             >;
         };
     };
