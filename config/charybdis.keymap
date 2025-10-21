@@ -78,12 +78,12 @@
 
         special {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans    &trans        &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &kp END   &kp HOME      &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans    &trans        &trans     &trans  &trans
-                        &trans  &trans  &trans    &trans          &trans
-                                &trans  &trans    &trans
+&trans  &trans   &trans  &trans            &trans                &trans                   &trans          &trans    &trans        &trans     &trans  &trans
+&trans  &kp ESC  &trans  &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE          &trans          &kp END   &kp HOME      &trans     &trans  &trans
+&trans  &kp TAB  &trans  &kp LESS_THAN     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &trans   &trans  &kp BACKSLASH     &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &trans          &trans    &trans        &trans     &trans  &trans
+                         &trans            &trans                &trans                   &trans          &trans
+                                           &trans                &trans                   &trans
             >;
         };
     };
